@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.psi.dpsi.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_Profile"
+        android:name="com.psi.dpsi.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+    <fragment
+        android:id="@+id/navigation_notes"
+        android:name="com.psi.dpsi.fragments.NotesFragment"
+        android:label="NotesFragment" />
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.psi.dpsi.fragments.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/navigation_my_course"
+        android:name="com.psi.dpsi.fragments.OrderHistoryFragment"
+        android:label="OrderHistoryFragment" />
+</navigation>

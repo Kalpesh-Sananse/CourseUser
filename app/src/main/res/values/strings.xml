@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DPSI Forensic</string>
+    <string name="tag_line">Journey from constable to PSI</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Web_client_id">http://595311007181-vuj6qc29cpu3of702q51b5r0png3jgar.apps.googleusercontent.com</string>
+    <string name="payment_id">rzp_test_svSlDCxkfQ8PqB</string>
+</resources>

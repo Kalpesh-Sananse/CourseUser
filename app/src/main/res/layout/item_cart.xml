@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/shape_outline_border">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/tvHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivServiceImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:rotation="180"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_circle_background" />
+
+        <ImageView
+            android:id="@+id/ivServiceImage"
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            style="@style/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="100"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvOfferPrice" />
+
+        <TextView
+            android:id="@+id/tvOriginalPrice"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:alpha="0.7"
+            android:text="100"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOfferPrice"
+            app:layout_constraintStart_toEndOf="@+id/tvOfferPrice"
+            app:layout_constraintTop_toTopOf="@+id/tvOfferPrice" />
+
+        <ImageView
+            android:id="@+id/btMinus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:padding="4dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivServiceImage"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalPrice"
+            app:srcCompat="@drawable/ic_minus" />
+
+        <ImageView
+            android:id="@+id/btIncrease"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="4dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/btMinus"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout4"
+            app:layout_constraintTop_toTopOf="@+id/btMinus"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <ImageView
+            android:id="@+id/btDeleteCart"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:tint="@color/grayBorder"
+            app:layout_constraintBottom_toBottomOf="@+id/btIncrease"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btIncrease"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:focusedByDefault="false"
+            android:textAlignment="center"
+            app:hintEnabled="false"
+            app:layout_constraintBottom_toBottomOf="@+id/btMinus"
+            app:layout_constraintStart_toEndOf="@+id/btMinus"
+            app:layout_constraintTop_toTopOf="@+id/btMinus">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etQty"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:text="100"
+                android:visibility="invisible" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvOfferPrice"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

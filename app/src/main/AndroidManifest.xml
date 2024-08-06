@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@drawable/round_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Basket"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.MediaPlayerActivity"
+            android:screenOrientation="landscape"
+            android:exported="false" />
+        <activity
+            android:name=".activities.VideoPlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CourseDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EnrollCourseActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotesDownloadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotesDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Basket" />
+        <activity
+            android:name=".activities.AuthActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Basket" />
+        <activity
+            android:name=".activities.HomeMainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="@string/payment_id" />
+    </application>
+
+</manifest>

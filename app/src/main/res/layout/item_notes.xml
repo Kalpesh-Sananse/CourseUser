@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="4dp"
+    android:background="@drawable/shape_outline_border">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="bts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/ivCategory"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/tvSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:textColor="@color/darkGray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCategory" />
+
+        <TextView
+            android:id="@+id/tvRatings"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_outline_border"
+            android:fontFamily="@font/inter_medium"
+            android:paddingStart="8dp"
+            android:paddingEnd="24dp"
+            android:text="4.1"
+            android:textColor="@color/darkGray"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="-20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvRatings"
+            app:layout_constraintStart_toEndOf="@+id/tvRatings"
+            app:layout_constraintTop_toTopOf="@+id/tvRatings"
+            app:srcCompat="@drawable/ic_star"
+            app:tint="@color/yellow" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvOfferPrice"
+            style="@style/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="₹ 4999"
+            android:textColor="@color/c10"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/tvOriginalPrice"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:alpha="0.8"
+            android:text="₹ 8999"
+            android:textColor="@color/darkGray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvOfferPrice"
+            app:layout_constraintStart_toEndOf="@+id/tvOfferPrice"
+            app:layout_constraintTop_toTopOf="@+id/tvOfferPrice" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btExplore"
+            style="@style/btOutline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="EXPLORE"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btBuyNow"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tvOfferPrice"
+            app:layout_constraintTop_toBottomOf="@+id/tvOfferPrice" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btBuyNow"
+            style="@style/btSolid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="BUY NOW"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/btExplore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btExplore"
+            app:layout_constraintTop_toTopOf="@+id/btExplore" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            style="@style/tvSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_solid_circle"
+            android:backgroundTint="@color/green"
+            android:paddingStart="12dp"
+            android:paddingEnd="30dp"
+            android:text="66% Off"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCategory"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

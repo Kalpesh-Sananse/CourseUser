@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "595311007181",
+    "firebase_url": "https://dpsi-e0d29-default-rtdb.firebaseio.com",
+    "project_id": "dpsi-e0d29",
+    "storage_bucket": "dpsi-e0d29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595311007181:android:b0bb9f938067e4aba96084",
+        "android_client_info": {
+          "package_name": "com.psi.dpsi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595311007181-8e8pifajn8sijq2326ge38teurpli9ls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.psi.dpsi",
+            "certificate_hash": "22febf589b4765123ede3bfdb58f3f846cb61b78"
+          }
+        },
+        {
+          "client_id": "595311007181-vuj6qc29cpu3of702q51b5r0png3jgar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxMgcKIChO-U_rjVRMCKmR-x76q2j-_Sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595311007181-vuj6qc29cpu3of702q51b5r0png3jgar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    //app ui colors
+<!--    <color name="c10">#1E55B0</color>-->
+    <color name="c10">#4E74F9</color>
+    <color name="c60">#FC5861</color>
+    <color name="c30">#401E55B0</color>
+    <color name="darkGray">#333333</color>
+    <color name="grayBorder">#6C6A6A</color>
+    <color name="red">#E74C3C</color>
+    <color name="green">#1E8449</color>
+    <color name="yellow">#F1C40F</color>
+    <color name="yellow_lite">#B3F1C40F</color>
+
+
+</resources>
